@@ -49,5 +49,5 @@ MDNS.begin("myesp8266") && LLMNR.begin(icefrog)
 
 - [x] Clean the code
 - [ ] Make repo cleaner :feelsgood:
-- [ ] Add [EasyDDNS](https://github.com/peopledrivemecrazy/EasyDDNS)
+- [ ] Add [EasyDDNS](https://github.com/ayushsharma82/EasyDDNS)
 - [ ] Add extra functionalities
