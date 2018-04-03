@@ -41,7 +41,7 @@ MDNS.begin(host_name) && LLMNR.begin(host_name)
 You can entirely use different hostname to visit pages on different ports, for example the normal webserver at 80 can be visited at myesp8266.local and webserver at port 81 can be visited at icefrog.local change code to 
 
 ```c
-MDNS.begin("myesp8266") && LLMNR.begin(icefrog)
+MDNS.begin("myesp8266") && LLMNR.begin("icefrog")
 ```
 
 
