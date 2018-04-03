@@ -9,7 +9,7 @@
 const char* ssid = "...";
 const char* password = "...";
 const char* mqtt_server = "...";
-
+const char* host_name = "esp8266";
 
 ESP8266WebServer server(80);
 ESP8266WebServer secret(81);
@@ -93,7 +93,7 @@ void reconnect() {
   }
 }
 void setupservers() {
-  if (MDNS.begin("esp8266") && LLMNR.begin("esp8266")) {
+  if (MDNS.begin(host_name) && LLMNR.begin(host_name)) {
     Serial.println("MDNS and LLMNR responder started");
   }
   server.on("/", handleRoot);
@@ -116,7 +116,7 @@ void serverhandlers() {
 }
 
 void loop() {
-    if (!client.connected()) {
+  if (!client.connected()) {
     reconnect();
   }
   serverhandlers();
