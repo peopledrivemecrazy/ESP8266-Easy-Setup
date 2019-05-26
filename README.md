@@ -1,4 +1,4 @@
-# ESP8266-Easy-Setup
+# ESP8266-Easy-Setup [DISCONTINUED SUPPORT!]
 Easy and simple barebones (hardcoded) ESP8266 setup for mDNS, LLMNR and Pubsub mqtt client. Just insert the ssid, wifi creds and mqtt broker ip/hostname 
 
 # Libraries Used
